@@ -10,15 +10,46 @@ body{
     margin: 0;
 }
 img#slide {
+    position: relative;
+    z-index: 0;
     object-fit: cover;
     size: 100%;
     width: 100%;
+}
+div#slideDetails{
+    display: flex;
+    justify-content: space-around;
+    color:white;
+    background-color: rgb(0,0,0);
+    border: 1px solid rgb(155,140,250);
+}
+p#slideTitle{
+    padding: 0.5vh;
+}
+p#slideGenre{
+    padding: 0.5vh;
+}
+p#slideRelease{
+    padding: 0.5vh;
+}
+p#seeMore{
+    padding: 0.5vh;
+    border: 3px solid gray ;
+    border-radius: 10%;
+}
+a#seeMore{
+    text-decoration: none;
+    color: white;
+}
+p#seeMore:hover{
+background-color: rgba(140,140,140,0.5);
+text-decoration: underline solid white 2px;
 }
 p#greeting {
     text-align: center;
     background-color: rgb(255,255,255);
     font-family: Robotoslab;
-    margin: 10px;
+    margin: 0.5vh;
     padding-bottom: 5px;
     border: 2px solid gray;
     border-radius: 5px;
@@ -32,7 +63,12 @@ div#queryDiv{
 p#requestParagraph {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+button#clueless {
+    border-radius: 5px;
+    margin-bottom: 1vh;
 }
 div#gameDisplayDiv{
     display: flex;
@@ -40,23 +76,19 @@ div#gameDisplayDiv{
     align-items: center;
     background-color: white;
 }
-button#clueless {
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
 p#title{
-    margin-top: 2px;
-    margin-bottom: 3px;
+    margin-top: 0.02vh;
+    margin-bottom: 1vh;
     color: black;
     background-color: white;
-    text-decoration: underline solid black 2px;
+    text-decoration: underline double black 2px;
 }
 img#thumbnail{
     border-radius: 5px;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0.2vh 0.8vh 0 rgba(0,0,0,0.3);
 }
 img#thumbnail:hover{
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0.4vh 1.6vh 0 rgba(0,0,0,0.5);
 }
 div#prettyDiv{
     display: flex;
@@ -67,11 +99,26 @@ div#more_info{
     display: flex;
 }
 p#genre{
-    margin-top: 0px;
-    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 0;
 }
 p#release_date{
+    text-align: center;
     margin: 0px;
     padding: 0px;
+}
+p#moreInfoButton{
+    text-align: center;
+    margin: 0;
+    border: 0.1vh;
+    padding: 0.5vh;
+    background-color: rgb(0,0,0,0.2);
+    border: 2px;
+    border-radius: 15px;
+}
+p#moreInfoButton:hover{
+    background-color: rgb(0,0,0,0.3);
+    text-decoration: underline solid white 2px;
 }
 
