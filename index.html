@@ -1,0 +1,43 @@
+<!DOCTYPE html />
+<html lang="en">
+
+<head>
+    <title>Free Game Search</title>
+    <link rel="stylesheet" href="./src/styles.css">
+    <script src="./src/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="imgSlider">
+            <img src="https://www.freetogame.com/g/582/thumbnail.jpg" id="slide">
+            <p id="slideTitle"></p>
+            <p id="slideGenre"></p>
+            <p id="slideRelease"></p>
+        </div>
+        <p id="greeting">Welcome to Free Game Search an app that allows you to search through <span
+                id="numberOfGames">400</span>
+            games and save those that you
+            like.</p>
+    </header>
+    <div id="queryDiv">
+        <p id="requestParagraph">Please Enter the name of the game you are looking for:</p>
+        <form id="gameDetails">
+            <input type="text" id="gameName" placeholder="Game Name" required>
+        </form>
+        <button id="clueless">I dont know what I'm looking for specifically</button>
+    </div>
+    <div id="gameDisplayDiv">
+        <div id="prettyDiv">
+            <p id="title"></p>
+            <img id="thumbnail" title="">
+            <div id="moreInfo">
+                <p id="genre"></p>
+                <p id="release_date"></p>
+                <button id="moreInfobutton" hidden></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

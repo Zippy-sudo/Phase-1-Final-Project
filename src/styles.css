@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Robotoslab;
+    src: url(./Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+html{ 
+    background-color: rgb(61, 64, 91);
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+img#slide {
+    object-fit: cover;
+    size: 100%;
+    width: 100%;
+}
+p#greeting {
+    text-align: center;
+    background-color: rgb(255,255,255);
+    font-family: Robotoslab;
+    margin: 10px;
+    padding-bottom: 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+div#queryDiv{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(244, 241, 222);
+    align-items: center;
+}
+p#requestParagraph {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 10px;
+}
+div#gameDisplayDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+button#clueless {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+p#title{
+    margin-top: 2px;
+    margin-bottom: 3px;
+    color: black;
+    background-color: white;
+    text-decoration: underline solid black 2px;
+}
+img#thumbnail{
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+}
+img#thumbnail:hover{
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.5);
+}
+div#prettyDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div#more_info{
+    display: flex;
+}
+p#genre{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+p#release_date{
+    margin: 0px;
+    padding: 0px;
+}
+
