@@ -61,7 +61,7 @@ function handleSubmit(event, object3) {
             const thumbnailToDisplay = document.querySelector("img#thumbnail");
             const genreToDisplay = document.querySelector("p#genre");
             const dateToDisplay = document.querySelector("p#release_date");
-            const buttonToDisplay = document.querySelector("button#moreInfobutton");
+            const buttonToDisplay = document.querySelector("p#moreInfobutton");
 
             titleToDisplay.innerText = element0.title;
 
@@ -80,23 +80,35 @@ function ImgSlider(object4) {
     let newArr0 = new Array();
     let newArr1 = new Array();
     let newArr2 = new Array();
-    for (let element0 of object4) {
-        newArr0.push(element0["thumbnail"]);
+    let newArr3 = new Array();
+
+    for (let element1 of object4) {
+        newArr0.push(element1["thumbnail"]);
     }
-    for (let element0 of object4) {
-        newArr1.push(element0["title"]);
+    for (let element2 of object4) {
+        newArr1.push(element2["title"]);
     }
-    for (let element0 of object4) {
-        newArr2.push(element0["genre"]);
+    for (let element3 of object4) {
+        newArr2.push(element3["genre"]);
     }
-    const titleToDisplay =  document.createElement("p");
-    const yearToDisplay = document.createElement("p");
+    for (let element4 of object4) {
+        newArr3.push(element4["release_date"].slice(0,4))
+    }
 
     const img = document.querySelector("img#slide");
+    const title = document.querySelector("p#slideTitle");
+    const genre = document.querySelector("p#slideGenre");
+    const releaseYear = document.querySelector("p#slideRelease");
     setInterval(() => {
         img.src = "";
+        title.innerText = "";
+        genre.innerText ="";
+        releaseYear.innerText ="";
+
         img.src = newArr0.pop();
-        imgSlider.appendChild(img);
+        title.innerText = `Title: ${newArr1.pop()}`;
+        genre.innerText = `Genre: ${newArr2.pop()}`;
+        releaseYear.innerText = `Release Year: ${newArr3.pop()}`;
     }, 10000)
 }
 function handleClick(object5) {
