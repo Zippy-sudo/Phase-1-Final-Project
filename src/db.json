@@ -5228,31 +5228,5 @@
     }
   ],
   "Saved_Games": [
-    {
-      "id": "12",
-      "title": "War Thunder",
-      "thumbnail": "https://www.freetogame.com/g/12/thumbnail.jpg",
-      "short_description": "A MMO shooter that puts you in command of hundreds of the finest combat vehicles of World War II.",
-      "game_url": "https://www.freetogame.com/open/war-thunder",
-      "genre": "Shooter",
-      "platform": "PC (Windows)",
-      "publisher": "Gaijin Entertainment",
-      "developer": "Gaijin Entertainment",
-      "release_date": "2013-08-15",
-      "freetogame_profile_url": "https://www.freetogame.com/war-thunder"
-    },
-    {
-      "id": "582",
-      "title": "Tarisland",
-      "thumbnail": "https://www.freetogame.com/g/582/thumbnail.jpg",
-      "short_description": "A cross-platform MMORPG developed by Level Infinite and Published by Tencent.",
-      "game_url": "https://www.freetogame.com/open/tarisland",
-      "genre": "MMORPG",
-      "platform": "PC (Windows)",
-      "publisher": "Tencent",
-      "developer": "Level Infinite",
-      "release_date": "2024-06-22",
-      "freetogame_profile_url": "https://www.freetogame.com/tarisland"
-    }
   ]
 }

@@ -21,7 +21,7 @@ You must have:
 Ensure that your device of choice has a browser installed.
 Click the link provided below to view the site.
 
-[Free Game Search](https://final-project-db.onrender.com)
+[Free Game Search](https://zippy-sudo.github.io/Phase-1-Final-Project/)
 
 ### Installation Process
 
@@ -47,9 +47,9 @@ To check whether or not a game you want is free click on the Game Name input fie
 
 Press **enter** on your keyboard
 
-If there is a game in the datatbase with the name you entered you will get a reply with a **more info** button.
+If there is a game in the database with the name you entered you will get a reply with a **more info** button.
 
-click on the **more info** button and then click **save**.
+Click on the **more info** button and then click **save**.
 
 A new page with the game and more details about the game should load.
 
