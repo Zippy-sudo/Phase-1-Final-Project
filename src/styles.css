@@ -26,11 +26,20 @@ div#slideDetails{
 p#slideTitle{
     padding: 0.5vh;
 }
+p#slideTitle:hover{
+    cursor: pointer;
+}
 p#slideGenre{
     padding: 0.5vh;
 }
+p#slideGenre:hover{
+    cursor: pointer;
+}
 p#slideRelease{
     padding: 0.5vh;
+}
+p#slideRelease:hover{
+    cursor: pointer;
 }
 p#seeMore{
     padding: 0.5vh;
@@ -54,6 +63,9 @@ p#greeting {
     border: 2px solid gray;
     border-radius: 5px;
 }
+p#greeting:hover{
+    cursor: pointer;
+}
 div#queryDiv{
     display: flex;
     flex-direction: column;
@@ -65,6 +77,9 @@ p#requestParagraph {
     text-align: center;
     margin-top: 1vh;
     margin-bottom: 1vh;
+}
+p#requestParagraph:hover{
+    cursor: pointer;
 }
 button#clueless {
     border-radius: 5px;
@@ -83,6 +98,9 @@ p#title{
     background-color: white;
     text-decoration: underline double black 2px;
 }
+p#title:hover{
+    cursor: pointer;
+}
 img#thumbnail{
     border-radius: 5px;
     box-shadow: 0 0.2vh 0.8vh 0 rgba(0,0,0,0.3);
@@ -97,16 +115,23 @@ div#prettyDiv{
 }
 div#more_info{
     display: flex;
+    flex-direction: column;
 }
 p#genre{
     text-align: center;
     margin-top: 2vh;
     margin-bottom: 0;
 }
+p#genre:hover{
+    cursor: pointer;
+}
 p#release_date{
     text-align: center;
     margin: 0px;
     padding: 0px;
+}
+p#release_date:hover{
+    cursor: pointer;
 }
 p#moreInfoButton{
     text-align: center;
@@ -120,5 +145,106 @@ p#moreInfoButton{
 p#moreInfoButton:hover{
     background-color: rgb(0,0,0,0.3);
     text-decoration: underline solid white 2px;
+    cursor: pointer;
 }
-
+p#platform{
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+p#publisher{
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+p#developer{
+    text-align: center;
+    margin: 0;
+}
+div#extras{
+    text-align: center;
+}
+div#queryDiv1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(244, 241, 222);
+}
+div#navDiv{
+    display: flex;
+    justify-content: space-between;
+    width:100vw;
+}
+div.div0{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:aliceblue;
+    border: 1px solid black;
+    padding: 5vh 0;
+}
+p.title{
+    margin-top: 0.02vh;
+    margin-bottom: 1vh;
+    color: black;
+    background-color: white;
+    text-decoration: underline double black 2px;
+}
+img.img{
+    border-radius: 5px;
+    box-shadow: 0 0.2vh 0.8vh 0 rgba(0,0,0,0.3);
+}
+img.img:hover{
+    box-shadow: 0 0.4vh 1.6vh 0 rgba(0,0,0,0.5);
+}
+div.div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+p.genre{
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+p.genre:hover{
+    cursor: pointer;
+}
+p.release_date{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+p.release_date:hover{
+    cursor:pointer;
+}
+p.platform{
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+p.publisher{
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+p.developer{
+    text-align: center;
+    margin: 0;
+}
+p.descriptionTitle{
+    margin-top: 3vh;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+p.description{
+    text-align: center;
+}
+div#listDiv{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(205, 237, 246);
+}
+p#gameNotFound{
+    text-align: center;
+}
