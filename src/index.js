@@ -1,10 +1,11 @@
 const serverURL = "http://localhost:3000";
 document.addEventListener("DOMContentLoaded", () => {
+
     fetch(`${serverURL}/games`)
         .then(resp => resp.json())
         .then(object0 => {
 
-            console.log(object0)
+            handleClick0("savedGamesbttn", "unhide");
 
             const numberOfGames = document.querySelector("span#numberOfGames");
             numberOfGames.innerText = object0.length;
@@ -262,6 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         handleClick0("imgSlider", "hide");
                         handleClick0("listDiv", "unhide");
                         handleClick0("savedGames", "unhide");
+                        handleClick0("savedGamesbttn", "hide");
 
                         fetch(`${serverURL}/Saved_Games`)
                             .then(resp => resp.json())
@@ -292,11 +294,8 @@ document.addEventListener("DOMContentLoaded", () => {
                                     descriptionTitle.setAttribute("class", "descriptionTitle");
                                     const description = document.createElement("p");
                                     description.setAttribute("class", "description");
-                                    const save = document.createElement("button");
-                                    save.setAttribute("class", "save");
 
                                     description.innerText = `${element0.short_description}`
-                                    save.innerText = "Save";
                                     title.innerText = `${element0.title}`;
                                     genre.innerText = `Genre ${element0.genre}`;
                                     release_date.innerText = `Release Date: ${element0.release_date}`;
@@ -312,7 +311,6 @@ document.addEventListener("DOMContentLoaded", () => {
                                     div1.appendChild(developer);
                                     div1.appendChild(descriptionTitle);
                                     div1.appendChild(description);
-                                    div1.appendChild(save);
                                     div0.appendChild(title);
                                     div0.appendChild(img);
                                     div0.appendChild(div1);
@@ -323,6 +321,75 @@ document.addEventListener("DOMContentLoaded", () => {
                             .catch(error => alert(error));
                     })
                     .catch(error => console.log(error.message))
+            })
+
+            const toSavedGames = document.querySelector("button#toSavedGames");
+            toSavedGames.addEventListener("click", () => {
+
+                handleClick0("queryDiv", "hide");
+                handleClick0("queryDiv1", "hide");
+                handleClick0("queryDiv1Modified", "hide");
+                handleClick0("gameDisplayDiv", "hide");
+                handleClick0("gameDisplayDivAdvanced", "hide");
+                handleClick0("imgSlider", "hide");
+                handleClick0("listDiv", "unhide");
+                handleClick0("savedGamesbttn", "hide");
+                handleClick0("savedGames", "unhide");
+
+                fetch(`${serverURL}/Saved_Games`)
+                .then(resp => resp.json())
+                .then(object2 => {
+                    for (let element0 of object2) {
+                        const savedGames = document.querySelector("div#savedGames");
+                        const div0 = document.createElement("div");
+                        div0.setAttribute("class", "div0");
+                        const title = document.createElement("p");
+                        title.setAttribute("class", "title");
+                        const img = document.createElement("img");
+                        img.setAttribute("src", `${element0.thumbnail}`);
+                        img.setAttribute("title", `${element0.title}`);
+                        img.setAttribute("class", "img");
+                        const div1 = document.createElement("div");
+                        div1.setAttribute("class", "div1");
+                        const genre = document.createElement("p");
+                        genre.setAttribute("class", "genre");
+                        const release_date = document.createElement("p");
+                        release_date.setAttribute("class", "release_date");
+                        const platform = document.createElement("p");
+                        platform.setAttribute("class", "platform")
+                        const publisher = document.createElement("p");
+                        publisher.setAttribute("class", "publisher");
+                        const developer = document.createElement("p");
+                        developer.setAttribute("class", "developer");
+                        const descriptionTitle = document.createElement("p");
+                        descriptionTitle.setAttribute("class", "descriptionTitle");
+                        const description = document.createElement("p");
+                        description.setAttribute("class", "description");
+
+                        description.innerText = `${element0.short_description}`
+                        save.innerText = "Save";
+                        title.innerText = `${element0.title}`;
+                        genre.innerText = `Genre ${element0.genre}`;
+                        release_date.innerText = `Release Date: ${element0.release_date}`;
+                        platform.innerText = `Platform: ${element0.platform}`;
+                        publisher.innerText = `Publisher: ${element0.publisher}`;
+                        descriptionTitle.innerText = "Description";
+                        developer.innerText = `Developer: ${element0.developer}`;
+
+                        div1.appendChild(genre);
+                        div1.appendChild(release_date);
+                        div1.appendChild(platform);
+                        div1.appendChild(publisher);
+                        div1.appendChild(developer);
+                        div1.appendChild(descriptionTitle);
+                        div1.appendChild(description);
+                        div0.appendChild(title);
+                        div0.appendChild(img);
+                        div0.appendChild(div1);
+                        savedGames.appendChild(div0);
+
+                    }
+                })
             })
         })
 });
@@ -533,12 +600,18 @@ function handleClick0(var0, val0) {
         let newArr7 = new Array();
         newArr7.push(mainPage, listDiv, errorParagraph, errorSpan);
         hideUnhide(newArr7, `${val0}`);
+    } else if (var0 === "savedGamesbttn") {
+        const toSavedGames = document.querySelector("button#toSavedGames");
+
+        let newArr8 = new Array();
+        newArr8.push(toSavedGames);
+        hideUnhide(newArr8, `${val0}`);
     } else if (var0 === "savedGames") {
         const savedGameDiv = document.querySelector("div#savedGames");
 
-        let newArr8 = new Array();
-        newArr8.push(savedGameDiv);
-        hideUnhide(newArr8,`${val0}`);
+        let newArr9 = new Array();
+        newArr9.push(savedGameDiv,);
+        hideUnhide(newArr9, `${val0}`);
     }
 }
 function handleSubmit1(event, object6) {
