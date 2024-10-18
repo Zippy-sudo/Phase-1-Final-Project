@@ -10,14 +10,14 @@
 <body>
     <header>
         <div id="imgSlider">
-            <div>
+            <div id="imgDiv">
                 <img src="https://www.freetogame.com/g/582/thumbnail.jpg" id="slide">
             </div>
             <div id="slideDetails">
-                <p id="slideTitle">Tarisland</p>
-                <p id="slideGenre">MMORPG</p>
-                <p id="slideRelease">2024</p>
-                <p id="seeMore"><a id="seeMore" href="">See More</a></p>
+                <p id="slideTitle">Title: Tarisland</p>
+                <p id="slideGenre">Genre: MMORPG</p>
+                <p id="slideRelease">Release Year: 2024</p>
+                <p id="seeMore">See More</p>
             </div>
         </div>
         <p id="greeting">Welcome to Free Game Search an app that allows you to search through <span
@@ -32,17 +32,45 @@
         </form>
         <button id="clueless">I dont know what I'm looking for specifically</button>
     </div>
-    <div id="gameDisplayDiv">
-        <div id="prettyDiv">
-            <p id="title"></p>
-            <img id="thumbnail" title="">
-            <div id="moreInfo">
-                <p id="genre"></p>
-                <p id="release_date"></p>
-                <p id="moreInfobutton" hidden></p>
+    <div id="listDiv" hidden>
+        <p id="gameNotFound" hidden> No game with the given <span id="parameter" hidden>parameter</span> found.</p>
+        <button id="listDivBack" class="backToMain" hidden>Back To Main Page</button>
+    </div>
+    <div id="gameDisplayDiv" hidden>
+        <div id="prettyDiv" hidden>
+            <p id="title" hidden></p>
+            <img id="thumbnail" title="" hidden>
+            <div id="moreInfo" hidden>
+                <p id="genre" hidden></p>
+                <p id="release_date" hidden></p>
+                <p id="moreInfoButton" hidden></p>
+                <p id="platform" hidden>PC (Windows)</p>
+                <p id="publisher" hidden>Tencent</p>
+                <p id="developer" hidden>Level Infinite"</p>
+                <div id="extras" hidden>
+                    <button id="save" class="save" hidden>Save</a>
+                </div>
             </div>
         </div>
     </div>
+    <div id="queryDiv1" hidden>
+        <label for="input1" id="input1Label" hidden> How would you like to filter your results</label>
+        <select id="input1" hidden>
+            <option value="genre" id="optionGenre" hidden>Genre</option>
+            <option value="release_date" id="optionReleaseYear" hidden>Release Year</option>
+            <option value="publisher" id="optionPublisher" hidden>Publisher</option>
+        </select>
+        <label for="input2" id="input2Label" hidden>Enter <span id="dropDownChoice" hidden>Detail</span></label>
+        <p id = Options hidden></p>
+            <form id="input2" hidden>
+                <input type="" id="selectInput" hidden>
+            </form>
+        <div id="navDiv" hidden>
+            <button id="queryDiv1Back" class="backToMain" hidden>BACK</button>
+            <button id="next" hidden>NEXT</button>
+        </div>
+    </div>
+    <div id="savedGames" hidden></div>
 </body>
 
 </html>
