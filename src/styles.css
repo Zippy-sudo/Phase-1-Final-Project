@@ -183,84 +183,69 @@ div#navDiv{
     justify-content: space-between;
     width:100vw;
 }
-div.created0{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:aliceblue;
-    border: 1px solid black;
-    padding: 5vh 0;
-    margin: 1vh 3vw 2vh;
+div.div0{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 1vh 1.5vw;
+    margin: 1vh 22vw;
 }
-p.created1{
-    margin-top: 0.02vh;
-    margin-bottom: 1vh;
-    color: black;
-    background-color: white;
-    text-decoration: underline double black 2px;
-}
-img.created2{
+img.img{
+    object-fit: cover;
+    height: 100%;
+    width:100%;
     border-radius: 5px;
-    box-shadow: 0 0.2vh 0.8vh 0 rgba(0,0,0,0.3);
+    box-shadow: 0 1vh 1vh 0 rgba(0,0,0,0.3);
 }
-img.created2:hover{
-    box-shadow: 0 0.4vh 1.6vh 0 rgba(0,0,0,0.5);
+img.img:hover{
+    border-radius: 5px;
+    box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.5);
 }
-div.created3{
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-p.created4{
-    text-align: center;
-    margin-top: 2vh;
-    margin-bottom: 0;
-}
-p.created4:hover{
-    cursor: pointer;
-}
-p.created5{
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-}
-p.created5:hover{
-    cursor:pointer;
-}
-p.created6{
-    text-align: center;
-    margin-top: 1vh;
-    margin-bottom: 0;
-}
-p.created7{
-    text-align: center;
-    margin-top: 1vh;
-    margin-bottom: 0;
-}
-p.created8{
-    text-align: center;
-    margin: 0;
-}
-p.created9{
-    margin-top: 3vh;
-    margin-bottom: 0;
-    text-decoration: underline;
-}
-p.created10{
-    text-align: center;
+p.title{
+    text-decoration: underline solid black 2px;
 }
 div#listDiv{
     display: flex;
     flex-direction: column;
-    background-color: rgb(205, 237, 246);
 }
-p#gameNotFound{
+button#listDivBack{
+    margin:2vh 22vw;
+}
+p.descriptionTitle{
+    margin: 1vh 1vw;
+    text-decoration: underline solid black 2px;
+}
+div#savedGames{
     text-align: center;
 }
-div#SavedGames {
-    display:flex;
+div.created0{
+    display: flex;
     flex-direction: column;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 1vh 1.5vw;
+    margin: 1vh 22vw;
 }
-button#savedGamesBack {
-    margin:2vh 2vw;
+p.created1{
+    text-decoration: underline solid black 2px;
+}
+p.created9{
+    margin: 1vh 1vw;
+    text-decoration: underline solid black 2px;
+}
+img.created2{
+    height: 15%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 1vh 1vh 0 rgba(0,0,0,0.3);
+}
+img.created2:hover{
+    border-radius: 5px;
+    box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.5);
+}
+div#listDivEmpty{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 1vh 1.5vw;
+    margin: 1vh 1vw;
 }
