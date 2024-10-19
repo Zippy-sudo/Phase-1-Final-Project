@@ -1,4 +1,4 @@
-const serverURL = "http://localhost:3000";
+const serverURL = "https://final-project-db.onrender.com";
 document.addEventListener("DOMContentLoaded", () => {
   fetch(`${serverURL}/games`)
     .then((resp) => resp.json())
